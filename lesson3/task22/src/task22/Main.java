@@ -1,0 +1,22 @@
+package task22;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        int sum=1;
+        if(n==0){
+            System.out.println(1);
+        }
+        else{
+            for (int i=1; i<=n;i++){
+                sum*=i;
+            }
+            System.out.println(sum);
+        }
+    }
+}
